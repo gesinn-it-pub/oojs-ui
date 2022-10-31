@@ -1,0 +1,18 @@
+name: 'Build semantic::core theme'
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build_semantic-core:
+    runs-on: ubuntu-latest
+    name: 'Build semantic::core theme'
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: npm install
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'npm'
+      - run: npm install
