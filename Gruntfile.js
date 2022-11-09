@@ -12,6 +12,7 @@ module.exports = function ( grunt ) {
 		path = require( 'path' ),
 		stringify = require( 'javascript-stringify' ),
 		themes = {
+			semanticcore: 'SemanticCore',
 			wikimediaui: 'WikimediaUI', // Do not change this line or you'll break `grunt add-theme`
 			apex: 'Apex'
 		},
