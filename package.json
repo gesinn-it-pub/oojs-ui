@@ -34,7 +34,7 @@
 		"jenkins": "npm test && npm run doc && npm run postdoc"
 	},
 	"dependencies": {
-		"gesinn-it-ui-base": "0.19.1-5",
+		"gesinn-it-ui-base": "0.19.1-6",
 		"jquery": "3.6.1",
 		"oojs": "6.0.0",
 		"wikimedia-ui-base": "0.19.0"

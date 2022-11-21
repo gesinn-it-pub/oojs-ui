@@ -8,7 +8,7 @@
 			"global": true
 		},
 		"progressive": {
-			"color": "#36c",
+			"color": "#000",
 			"global": true
 		},
 		"destructive": {

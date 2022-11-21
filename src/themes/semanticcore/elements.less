@@ -279,16 +279,18 @@
 			}
 		}
 
+		// Take colors from progressive button
+		// .mw-framed-button-colored( ~'.oo-ui-buttonElement-button', @color-primary, @background-color-framed--hover, @border-color-framed-progressive--hover, @color-primary--active, @color-primary--focus );
 		&.oo-ui-widget-enabled {
 			> .oo-ui-buttonElement-button {
-				background-color: @background-color-framed;
-				color: @color-base;
-				border-color: @border-color-base;
+				background-color: @color-primary;
+				color: @wmui-color-base100;
+				border-color: @color-primary;
 
 				&:hover {
-					background-color: @background-color-framed--hover;
-					color: @color-base--hover;
-					border-color: @border-color-base--hover;
+					background-color: @color-primary--active;
+					color: @wmui-color-base100;
+					border-color: @border-color-framed-progressive--hover;
 
 					> .oo-ui-iconElement-icon,
 					> .oo-ui-indicatorElement-indicator {
@@ -299,8 +301,17 @@
 				}
 
 				&:focus {
-					border-color: @border-color-base--focus;
-					box-shadow: @box-shadow-base--focus;
+					border-color: @border-color-primary--focus;
+					box-shadow: @box-shadow-primary--focus;
+				}
+
+				// black to white
+				> .oo-ui-indicatorElement-indicator,
+				> .oo-ui-iconElement-icon {
+					&:not( .oo-ui-image-invert ) {
+						filter: brightness( 0 ) invert( 1 );
+						opacity: 1;
+					}
 				}
 			}
 
@@ -319,39 +330,24 @@
 			// `.oo-ui-buttonElement-pressed` is the `:active` (mousedown) one here.
 			> .oo-ui-buttonElement-button:active,
 			&.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button {
-				background-color: @background-color-framed--active;
-				color: @color-base--active;
+				background-color: @color-primary--active;
 				border-color: @border-color-base--active;
 				box-shadow: none;
 			}
 
 			&.oo-ui-flaggedElement {
 				&-progressive {
-					.mw-framed-button-colored( ~'.oo-ui-buttonElement-button', @color-primary, @background-color-framed--hover, @border-color-framed-progressive--hover, @color-primary--active, @color-primary--focus );
+					.mw-framed-primary-button-colored( ~'.oo-ui-buttonElement-button', @color-primary, @color-primary--hover, @color-primary--active, @color-primary--focus );
 				}
 
 				&-destructive {
-					.mw-framed-button-colored( ~'.oo-ui-buttonElement-button', @color-destructive-non-primary, @background-color-framed--hover, @border-color-framed-destructive--hover, @color-destructive--active, @color-destructive--focus );
+					.mw-framed-primary-button-colored( ~'.oo-ui-buttonElement-button', @color-destructive, @color-destructive--hover, @color-destructive--active, @color-destructive--focus );
 				}
 			}
 
-			&.oo-ui-flaggedElement-primary {
-				&.oo-ui-flaggedElement {
-					&-progressive {
-						.mw-framed-primary-button-colored( ~'.oo-ui-buttonElement-button', @color-primary, @color-primary--hover, @color-primary--active, @color-primary--focus );
-					}
-
-					&-destructive {
-						.mw-framed-primary-button-colored( ~'.oo-ui-buttonElement-button', @color-destructive, @color-destructive--hover, @color-destructive--active, @color-destructive--focus );
-					}
-				}
-
-				> .oo-ui-buttonElement-button {
-					> .oo-ui-iconElement-icon,
-					> .oo-ui-indicatorElement-indicator {
-						opacity: @opacity-icon-base--selected;
-					}
-				}
+			> .oo-ui-iconElement-icon,
+			> .oo-ui-indicatorElement-indicator {
+				opacity: @opacity-icon-base--selected;
 			}
 		}
 	}
