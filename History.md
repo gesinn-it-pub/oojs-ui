@@ -1,4 +1,42 @@
 # OOUI Release History
+
+## v0.46.1 / 2023-01-07
+### Code
+* php: Declare all class properties (Umherirrender)
+* php: Fix undeclared method issues from phan (Umherirrender)
+
+## v0.46.0 / 2022-12-07
+### Breaking changes
+* [BREAKING CHANGE] Raise claimed PHP need from 7.2+ to 7.4+ (James D. Forrester)
+
+### Features
+* Allow minlength attribute to be set in text input based widgets (dreamyjazz)
+
+### Styles
+* WikimediaUI theme: Remove negative top/bottom margins on dropdown menus (Volker E.)
+* WikimediaUI theme: Use design-first backdrop color (Volker E.)
+* icons: Minor file size optimization for the new 'palette' icons (Thiemo Kreuz)
+* icons: Update warning color to new design-first `#edab00` (Volker E.)
+### Code
+* Add some small pieces of missing documentation (Thiemo Kreuz)
+* Avoid PHP notice in IndexLayout::getTabPanel() (Daimona Eaytoy)
+* FloatableElement: Clear all relevant properties when not positioning (Bartosz Dziewoński)
+* MenuSelectWidget: Remove unneeded 'width: 100%;' causing incorrect width (Bartosz Dziewoński)
+* OutlineOptionWidget: Fix setting default indent level (Bartosz Dziewoński)
+* PHP: Fix multiple issues in StackLayout::setItem() (Thiemo Kreuz)
+* PHP: Optimize code initializing default configuration (Thiemo Kreuz)
+* Remove unused "multiline" configuration (Thiemo Kreuz)
+* build: Update 'wikimedia-ui-base' to latest v0.20.0 (Volker E.)
+* build: Update mediawiki/mediawiki-codesniffer (Umherirrender)
+* build: Update mediawiki/mediawiki-phan-config to 0.12.0 (Daimona Eaytoy)
+* build: Update stylelint-config-wikimedia (Umherirrender)
+* build: Update wikimedia-ui-base to 0.21.0 (Volker E.)
+* build: Upgrade PHPUnit from ^8.5 to ^9.5 (James D. Forrester)
+* demo: Fix preserving scroll position when changing options (Bartosz Dziewoński)
+* demo: Scroll to URL fragment on load (Bartosz Dziewoński)
+* docs: Fix and add all missing PHPDoc tags (Thiemo Kreuz)
+
+
 ## v0.45.0 / 2022-09-26
 ### Breaking changes
 * [BREAKING CHANGE] Raise jQuery requirement from v3.6.0 to v3.6.1 (James D. Forrester)
@@ -16,6 +54,16 @@
 * demos: Make icons page more robust (Thiemo Kreuz)
 * README: Update some of the release steps to avoid typo mistakes (James D. Forrester)
 * AUTHORS: Update for the first time since 2017(!) and composer.json listing too (James D. Forrester)
+
+
+## 0.44.4 / 2022-12-12
+### Code
+* build: .gitreview: Swap defaultbranch for track (Sam Reed)
+* docs: Fix and add all missing PHPDoc tags (Thiemo Kreuz)
+* php: Declare all class properties (Umherirrender)
+* php: Fix undeclared method issues from phan (Umherirrender)
+* PHP: Optimize code initializing default configuration (Thiemo Kreuz)
+
 
 ## v0.44.3 / 2022-08-16
 ### Features
