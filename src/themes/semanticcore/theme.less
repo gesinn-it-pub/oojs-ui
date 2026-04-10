@@ -1,0 +1,14 @@
+// Theme entry point. Everything required to compile this theme should be included here.
+// This file is in turn included when building the theme.
+
+// Base and theme variables and mixins.
+@import 'common.less';
+
+// Theme rules.
+// Only files with actual SemanticCore customizations are maintained here.
+// Files identical to wikimediaui are imported directly from upstream to avoid drift.
+@import 'elements.less';
+@import '../wikimediaui/layouts.less'; // identical to wikimediaui — no SemanticCore changes
+@import '../wikimediaui/tools.less';   // identical to wikimediaui — no SemanticCore changes
+@import 'widgets.less';
+@import 'windows.less';
