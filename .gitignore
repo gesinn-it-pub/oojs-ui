@@ -1,7 +1,6 @@
 /coverage
 /dist/*
 /doc
-/docs
 node_modules
 npm-debug.log
 *.rtl.css

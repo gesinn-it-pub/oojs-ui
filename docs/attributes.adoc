@@ -1,0 +1,2 @@
+:project_name: OOUI SemanticCore
+:project_type: nodejs

@@ -1,0 +1,10 @@
+include::docs/attributes.adoc[]
+= {project_name}
+
+image:https://github.com/gesinn-it-pub/oojs-ui/actions/workflows/build-docs.yml/badge.svg[Build Docs,link=https://github.com/gesinn-it-pub/oojs-ui/actions/workflows/build-docs.yml]
+
+This repository is a fork of https://github.com/wikimedia/oojs-ui[wikimedia/oojs-ui]
+that adds a custom *SemanticCore* theme. The fork is maintained as a thin
+customization layer on top of upstream releases.
+
+For detailed documentation on building and upgrading, see link:AGENTS.md[AGENTS.md].
