@@ -10,3 +10,4 @@ Load the following reference files before starting work:
 - `references/02-universal-conventional-commits.md`
 - `references/03-universal-changelog.md`
 - `references/04-universal-release.md`
+- `references/05-oojs-ui-release.md`
