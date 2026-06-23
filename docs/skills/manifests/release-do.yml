@@ -1,0 +1,11 @@
+skill: release-do
+description: >
+  Prepare and execute a versioned release. Use when asked to cut a release,
+  bump the version number, tag a release, or publish a new version following
+  the project's release workflow.
+references:
+  - universal/conventions/semver.adoc
+  - universal/conventions/conventional-commits.adoc
+  - universal/conventions/changelog.adoc
+  - universal/procedures/release.adoc
+  - oojs-ui/procedures/release.adoc

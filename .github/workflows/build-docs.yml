@@ -9,6 +9,7 @@ on:
       - docs/attributes.adoc
       - docs/gesinn-it-docs-master-pub
       - docs/gesinn-it-docs-master-pub/**
+      - docs/skills/**
     branches:
       - '**'
   workflow_dispatch:
@@ -97,7 +98,9 @@ jobs:
           PROJECT_TYPE=$(grep ':project_type:' docs/attributes.adoc | sed 's/.*: *//')
           python3 docs/gesinn-it-docs-master-pub/scripts/build-skills.py \
             --manifests-dir docs/gesinn-it-docs-master-pub/skills/manifests \
+            --manifests-dir docs/skills/manifests \
             --snippets-dir  docs/gesinn-it-docs-master-pub/snippets \
+            --extra-snippets-dir docs/skills/snippets \
             --claude-skills-dir .claude/skills \
             --agents-skills-dir .agents/skills \
             --scope "$PROJECT_TYPE"
