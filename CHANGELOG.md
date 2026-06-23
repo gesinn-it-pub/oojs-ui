@@ -6,6 +6,11 @@ This project adheres to [Semantic Versioning](https://semver.org/) and
 
 ## [Unreleased]
 
+## [0.46.1-4] - 2026-06-23
+
+### Fixed
+- ComboBoxInputWidget dropdown button shows white background when open [`04504a40`](https://github.com/gesinn-it-pub/oojs-ui/commit/04504a40f69ad6314a8250dcbfce849d72bd0cce)
+
 ## [0.46.1-3] - 2026-04-10
 
 ### Added
@@ -28,7 +33,8 @@ Initial fork tag — SemanticCore theme prototype on top of upstream 0.46.1.
 ### Fixed
 - buttonElement: set font-weight normal [`c2b572d3`](https://github.com/gesinn-it-pub/oojs-ui/commit/c2b572d318ceddd1eda061c4f85df171b775614e)
 
-[Unreleased]: https://github.com/gesinn-it-pub/oojs-ui/compare/0.46.1-3...HEAD
+[Unreleased]: https://github.com/gesinn-it-pub/oojs-ui/compare/0.46.1-4...HEAD
+[0.46.1-4]: https://github.com/gesinn-it-pub/oojs-ui/compare/0.46.1-3...0.46.1-4
 [0.46.1-3]: https://github.com/gesinn-it-pub/oojs-ui/compare/0.46.1-2...0.46.1-3
 [0.46.1-2]: https://github.com/gesinn-it-pub/oojs-ui/compare/0.46.1-1...0.46.1-2
 [0.46.1-1]: https://github.com/gesinn-it-pub/oojs-ui/releases/tag/0.46.1-1
